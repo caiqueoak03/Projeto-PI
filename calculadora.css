@@ -1,0 +1,41 @@
+body {
+	background-color: brown;
+	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+input {
+	width: 225px;
+	height: 1.25rem;
+}
+
+#graficos-container {
+	height: 175px;
+  width: 30vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.graficos {
+	width: 25%;
+	height: 0;
+	transition: height 1s;
+}
+
+#grafico1 {
+	background-color: white;
+}
+#grafico2 {
+	background-color: blue;
+}
+#grafico3 {
+	background-color: darkgreen;
+}
+#grafico4 {
+	background-color: gold;
+}

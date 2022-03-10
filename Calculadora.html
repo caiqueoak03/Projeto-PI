@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simulador</title>
+		<link rel="stylesheet" href="calculadora.css" />
+	</head>
+	<body>
+		<h1>Simulador de tráfego de pessoas</h1>
+
+		<p>Área 1</p>
+		<input
+			id="area1"
+			type="number"
+			placeholder="Digite a quantidade de pessoas"
+		/>
+
+		<p>Área 2</p>
+		<input
+			id="area2"
+			type="number"
+			placeholder="Digite a quantidade de pessoas"
+		/>
+
+		<p>Área 3</p>
+		<input
+			id="area3"
+			type="number"
+			placeholder="Digite a quantidade de pessoas"
+		/>
+
+		<p>Área 4</p>
+		<input
+			id="area4"
+			type="number"
+			placeholder="Digite a quantidade de pessoas"
+		/>
+
+		<br />
+		<br />
+
+		<button onclick="calcular()" id="button">Calcular</button>
+
+		<div id="graficos-container">
+			<div id="grafico1" class="graficos"></div>
+			<div id="grafico2" class="graficos"></div>
+			<div id="grafico3" class="graficos"></div>
+			<div id="grafico4" class="graficos"></div>
+		</div>
+	</body>
+</html>
+
+<script>
+	function calcular() {
+    const value1 = Number(area1.value);
+    const value2 = Number(area2.value);
+    const value3 = Number(area3.value);
+    const value4 = Number(area4.value);
+
+		const totalPessoas = value1 + value2 + value3 + value4;
+
+    grafico1.style.height = `${value1 / totalPessoas * 100}%`;
+    grafico2.style.height = `${value2 / totalPessoas * 100}%`;
+    grafico3.style.height = `${value3 / totalPessoas * 100}%`;
+    grafico4.style.height = `${value4 / totalPessoas * 100}%`;
+	}
+</script>
