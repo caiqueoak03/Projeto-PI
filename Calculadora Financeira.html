@@ -50,7 +50,10 @@
             Movimento da area diario(em pessoas registradas)<input id="movi" type="text"><br>
             Area do estabelecimento <input id="area" type="text"><br>
             <button onclick="calcular()">Calcular valores com inflação</button>
-            <div style="background-color: rgb(72, 72, 194);" id="Display"></div>
+            <div style="background-color: rgb(72, 72, 194); height: 30%;" id="Display">
+            
+            
+            </div>
 
         </h3>
     </div>
@@ -70,12 +73,6 @@
             Display.innerHTML =
                 `A inflaçao não é o suficiente para mudar o valor o alguel sera de ${sinf}R$`;
         } else {
-
-
-
-
-
-
             Display.innerHTML =
                 `O valor do seu alguel sem a inflação é de ${sinf}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${cinf}R$.`
         }
