@@ -1,93 +1,109 @@
-#banner-container{
-	background-color: rgb(34, 138, 138); 
-	height: 60px; 
+/* BANNER */
+
+body {
+    margin: 0;
+    background: url(imagens/shopping\ pi\ edit.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
 }
 
-#banner-container * {
-	float: left;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	font-weight: 600;
-	font-size: 1rem;
-	color: white;
+#banner-container {
+    width: 100vw;
+    border-bottom: 10px solid rgb(9, 112, 160);
+    background-color: rgb(34, 138, 138);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
 }
 
-#banner-container a {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	column-gap: 10px;
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
 }
 
-#icone {
-	float: left;
-	color: white;
-}
-
-#marca {
-	position: relative;
-	right: 40px;
-	font-size: 1.3rem;
-	bottom: 3px;
-}
-
-#titles-container * {
-	margin-left: 20px;
-	margin-top: 20px;
-	padding: 0;
-}
-
-#calculadora-financeira-link {
-	color: white;
-	text-decoration: none;
-}
-
-#cadastro-container {
-	padding-left: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
+#logo-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
-	position: relative;
-	float: left;
-	height: 69px;
-	bottom: 10px;
+    height: 75px;
 }
 
-h3 {
-	color: rgb(255, 255, 255);
-	font-family: "Chivo", sans-serif;
+#logo-text {
+    margin-left: -30px;
+    font-size: 1.3rem;
+    font-family: cursive;
 }
 
-h2 {
-	color: antiquewhite;
+#titles-container {
+    column-gap: 75px;
+    display: flex;
+    font-family: sans-serif;
+    margin-right: 25px;
 }
 
-h5 {
-	color: black;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	font-size: medium;
-}
-.classe1 {
-	margin-left: 2;
-	background-color: rgb(181, 221, 221);
-	width: 60%;
-	border-radius: 10%;
-	height: 500px;
-	padding-left: 30px;
-}
-body {
-	margin: 0;
-	background-image: u;
-	background: url(imagens/shopping\ pi\ edit.jpg) no-repeat;
-	background-size: cover;
-	min-height: 100vh;
+#titles-container a {
+    text-decoration: none;
+    color: white;
 }
 
+#cadastro-container {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+#cadastro-container a {
+    text-decoration: underline;
+    color: white;
+    font-size: .9rem;
+}
+
+/* CORPO */
+
+#main-text {
+    background-color: rgb(181, 221, 221);
+    padding: 20px 20px 150px 20px;
+    border-radius: 75px;
+    width: 60vw;
+    font-family: "Chivo", sans-serif;
+}
+
+#main-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-right: 100px;
+}
+
+#main-text h2 {
+    margin-top: 50px;
+    color: rgb(34, 138, 138);
+}
+
+/* Calculadora */
+
+#calculadora-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.938);
+}
+
+#calculadora-container input {
+    margin-bottom: 25px;
+    width: 200px;
+}

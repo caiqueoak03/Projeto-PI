@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simulador Financeiro</title>
         <script src="https://kit.fontawesome.com/5c454b399b.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
@@ -15,7 +15,7 @@
 
             <div id="logo-container">
                 <i id="icone" class="fa-solid fa-align-justify"></i>
-                <a href="Calculadora Financeira.html" id="logo-link">
+                <a href="site.html" id="logo-link">
                     <img id="logo" src="imagens/Logo PI.png" alt="">
                     <p id="logo-text">Light On</p>
                 </a>
@@ -36,12 +36,17 @@
         <!-- Calculadora -->
         <div id="calculadora-container">
             Valor do aluguel por m²
-            <input type="text" id="valorMetro2">
+            <input type="number" id="valorMetro2">
             Fluxo diário mensal
-            <input type="text" id="valorMetro2">
+            <input type="number" id="valorMetro2">
             Valor do aluguel por m²
-            <input type="text" id="valorMetro2">
+            <input type="number" id="valorMetro2">
+
+            <button id="button" onclick="calcular()">Calcular</button>
+            
+            <div id="display"></div>
         </div>
+
     </body>
 
 </html>
