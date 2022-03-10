@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/5c454b399b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<link rel="stylesheet" href="D:\Trabalhos SPTECH\Projeto PI\Projeto-PI\style.css">
+
+
+
+<body>
+
+
+    <!-- Banner -->
+
+
+
+    <div style="background-color: rgb(34, 138, 138); height: 60px; margin-top: 0%;">
+        <i id="icone" class="fa-solid fa-align-justify"></i>
+
+        <a style="float:left" href="toma.html">
+            <img style="height: 69px;margin-left: -2%; margin-top: -5%;" src="imagens/Logo PI.png" alt="">
+
+        </a>
+        <h3 style="float:left; margin-left: 0%;">Light On</h3>
+        <h2 style="float:left; margin-left: 7%;">Contratar nossos serviços</h2>
+        <h2 style="float:left; margin-left: 7%;">Falar conosco</h2>
+        <h2 style="float:left; margin-left: 7%;margin-right: 0%;">Oque é a light on</h2>
+        <h2 style="float:left; margin-left: 18%;">Cadastrar-se</h2>
+        <h2 style="float:left; margin-left: 4%; margin-right: 0%;">Login</h2>
+    </div>
+    <div style="background-color: rgb(9, 112, 160); height: 13px;"></div>
+
+
+
+    <!-- Calculadora -->
+
+
+    <div style="text-align:center;">
+
+        <h3>
+            Valor do aluguel por metro quadrado <input id="algm" type="text"><br>
+          Movimento da area diario(em pessoas registradas)<input id="movi" type="text"><br>
+            Area do estabelecimento <input id="area" type="text"><br>
+            <button onclick="calcular()">Calcular valores com inflação</button>
+            <div style="background-color: rgb(72, 72, 194);" id="Display"></div>
+
+        </h3>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var sinf = Number(algm.value) * (area.value)
+        var cali = Number(movi.value)*(0.002)
+        var cinf = Number(cali)*(sinf)
+      
+        if ( cinf <= cali) {
+            console.log`O valor do seu alguel sem a inflação é de ${sinf}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${sinf}R$.` 
+        }
+
+        Display.innerHTML =
+            `O valor do seu alguel sem a inflação é de ${sinf}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${cinf}R$.`
+    }
+</script>
