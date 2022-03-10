@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simulador Financeiro</title>
-        <script src="https://kit.fontawesome.com/5c454b399b.js" crossorigin="anonymous"></script>
+        <title>Light On</title>
         <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5c454b399b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
         <!-- Banner -->
         <div id="banner-container">
 
@@ -33,31 +35,13 @@
             </div>
         </div>
 
-        <!-- Calculadora -->
-        <div id="calculadora-container">
-            Valor do aluguel por m²
-            <input type="text" id="valorMetro2">
-            Fluxo diário mensal
-            <input type="text" id="valorMetro2">
-            Valor do aluguel por m²
-            <input type="text" id="valorMetro2">
+        <!-- Corpo -->
+        <div id="main-text">
+            <h2>O que é a Light On?</h2>
+            <p>A Light On é uma empresa que promove aos shoppings uma melhor forma de gerenciar seu espaço.</p>
+
+            <h2>Como?</h2>
+            <p>Utilizando nossos sensores, coletaremos os dados de tráfeg de pessoas nas áreas do complexo comercial e através de gráficos e estatísticas mostraremos os dados.</p>
         </div>
     </body>
-
 </html>
-<script>
-    function calcular() {
-        var semInflação = Number(algm.value) * (area.value)
-        var cali = Number(movi.value) * (0.002)
-        var semInflação = Number(cali) * (semInflação)
-
-        if (semInflação < semInflação) {
-            Display.innerHTML =
-                `A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$`;
-        } 
-        else {
-            Display.innerHTML =
-                `O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.`
-        }
-    }
-</script>

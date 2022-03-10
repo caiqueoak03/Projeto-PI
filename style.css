@@ -1,12 +1,72 @@
+#banner-container{
+	background-color: rgb(34, 138, 138); 
+	height: 60px; 
+}
+
+#banner-container * {
+	float: left;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	font-weight: 600;
+	font-size: 1rem;
+	color: white;
+}
+
+#banner-container a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 10px;
+}
+
+#icone {
+	float: left;
+	color: white;
+}
+
+#marca {
+	position: relative;
+	right: 40px;
+	font-size: 1.3rem;
+	bottom: 3px;
+}
+
+#titles-container * {
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 0;
+}
+
+#calculadora-financeira-link {
+	color: white;
+	text-decoration: none;
+}
+
+#cadastro-container {
+	padding-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+#logo {
+	position: relative;
+	float: left;
+	height: 69px;
+	bottom: 10px;
+}
+
 h3 {
 	color: rgb(255, 255, 255);
 	font-family: "Chivo", sans-serif;
-	font-size: 1.25rem;
 }
 
 h2 {
 	color: antiquewhite;
-	font-size: medium;
 }
 
 h5 {
@@ -30,10 +90,4 @@ body {
 	background-size: cover;
 	min-height: 100vh;
 }
-#icone {
-	float: left;
-	color: aliceblue;
-	margin-left: 2%;
-	margin-top: 2%;
-	height: 100px;
-}
+
