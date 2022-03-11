@@ -41,7 +41,7 @@ body {
 #logo-text {
     margin-left: -30px;
     font-size: 1.3rem;
-    font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #titles-container {

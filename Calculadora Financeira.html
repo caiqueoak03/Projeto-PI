@@ -54,17 +54,18 @@
 </html>
 <script>
     function calcular() {
-        var semInflação = Number(valorMetro2.value) * (arealoja.value)
-        var cali = Number(FluxoM.value) * (0.002)
-        var semInflação = Number(cali) * (semInflação)
+        var calculo_alugel = Number(valorMetro2.value) * (arealoja.value)
+        var CalculoInflacao = Number(FluxoM.value) * (0.002)
+        var Cominflacao = Number(CalculoInflacao) * (calculo_alugel)
 
-        if (semInflação < semInflação) {
+        if (Cominflacao < calculo_alugel) {
             display.innerHTML =
-            `<h3>O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.</h3>`
-    
+           
+            `<h3>A inflaçao não é o suficiente para mudar o valor o alguel sera de ${calculo_alugel}R$</h3>`
         } else {
             display.innerHTML =
-            `<h3>A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$</h3>`;
+            `<h3>O valor do seu alguel sem a inflação é de ${calculo_alugel}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${calculo_alugel}R$.</h3>`;
+           
 
         }
     }
