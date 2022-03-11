@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simulador Financeiro</title>
-        <script src="https://kit.fontawesome.com/5c454b399b.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simulador Financeiro</title>
+		<script
+			src="https://kit.fontawesome.com/5c454b399b.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Banner -->
+		<div id="banner-container">
+			<div id="logo-container">
+				<i id="icone" class="fa-solid fa-align-justify"></i>
+				<a href="site.html" id="logo-link">
+					<img id="logo" src="imagens/Logo PI.png" alt="" />
+					<p id="logo-text">Light On</p>
+				</a>
+			</div>
 
-        <!-- Banner -->
-        <div id="banner-container">
+			<div id="titles-container">
+				<a>contratar nossos serviços</a>
+				<a>falar conosco</a>
+				<a href="Calculadora Financeira.html">calcule o aluguel</a>
+			</div>
 
-            <div id="logo-container">
-                <i id="icone" class="fa-solid fa-align-justify"></i>
-                <a href="site.html" id="logo-link">
-                    <img id="logo" src="imagens/Logo PI.png" alt="">
-                    <p id="logo-text">Light On</p>
-                </a>
-            </div>
-    
-            <div id="titles-container">
-                <a>contratar nossos serviços</a>
-                <a>falar conosco</a>
-                <a href="Calculadora Financeira.html" target="_blank">calcule o aluguel</a>
-            </div>
-    
-            <div id="cadastro-container">
-                <a href="">Login</a>
-                <a href="">Cadastre-se</a>
-            </div>
-        </div>
+			<div id="cadastro-container">
+				<a href="">Login</a>
+				<a href="">Cadastre-se</a>
+			</div>
+		</div>
 
-        <!-- Calculadora -->
-        <div id="calculadora-container">
-            Valor do aluguel por m²
-            <input type="number" id="valorMetro2">
-            Fluxo diário mensal
-            <input type="number" id="valorMetro2">
-            Valor do aluguel por m²
-            <input type="number" id="valorMetro2">
+		<!-- Calculadora -->
+		<div id="calculadora-container">
+			Valor do aluguel por m²
+			<input type="number" id="valorMetro2" />
+			Fluxo diário mensal
+			<input type="number" id="valorMetro2" />
+			Valor do aluguel por m²
+			<input type="number" id="valorMetro2" />
 
-            <button id="button" onclick="calcular()">Calcular</button>
-            
-            <div id="display"></div>
-        </div>
+			<button id="button" onclick="calcular()">Calcular</button>
 
-    </body>
-
+			<div id="display"></div>
+		</div>
+	</body>
 </html>
 <script>
-    function calcular() {
-        var semInflação = Number(algm.value) * (area.value)
-        var cali = Number(movi.value) * (0.002)
-        var semInflação = Number(cali) * (semInflação)
+	function calcular() {
+		var semInflação = Number(algm.value) * area.value;
+		var cali = Number(movi.value) * 0.002;
+		var semInflação = Number(cali) * semInflação;
 
-        if (semInflação < semInflação) {
-            Display.innerHTML =
-                `A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$`;
-        } 
-        else {
-            Display.innerHTML =
-                `O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.`
-        }
-    }
+		if (semInflação < semInflação) {
+			Display.innerHTML = `A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$`;
+		} else {
+			Display.innerHTML = `O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.`;
+		}
+	}
 </script>
