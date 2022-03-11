@@ -1,117 +1,120 @@
 /* BANNER */
 
 body {
-    margin: 0;
-    background: url(imagens/shopping\ pi\ edit.jpg) no-repeat;
-    min-height: 100vh;
-    background-size: cover;
+	margin: 0;
+	background: url(imagens/shopping\ pi\ edit.jpg) no-repeat;
+	min-height: 100vh;
+	background-size: cover;
 }
 
 #banner-container {
-    width: 100vw;
-    border-bottom: 10px solid rgb(9, 112, 160);
-    background-color: rgb(34, 138, 138);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 75px;
-    font-size: 1rem;
-    color: white;
-    font-weight: 700;
+	width: 100vw;
+	border-bottom: 10px solid rgb(9, 112, 160);
+	background-color: rgb(34, 138, 138);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 75px;
+	font-size: 1rem;
+	color: white;
+	font-weight: 700;
 }
 
 #logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 30px;
 }
 
 #logo-link {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 
 #logo {
-    height: 75px;
+	height: 75px;
 }
 
 #logo-text {
+<<<<<<< HEAD
     margin-left: -30px;
     font-size: 1.3rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+=======
+	margin-left: -30px;
+	font-size: 1.3rem;
+	font-family: cursive;
+>>>>>>> fe04efcde68729260409b67e3eaeaf4cb3927077
 }
 
 #titles-container {
-    column-gap: 75px;
-    display: flex;
-    font-family: sans-serif;
-    margin-right: 25px;
+	column-gap: 75px;
+	display: flex;
+	font-family: sans-serif;
+	margin-right: 25px;
 }
 
 #titles-container a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
 #cadastro-container {
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
 }
 
 #cadastro-container a {
-    text-decoration: underline;
-    color: white;
-    font-size: .9rem;
+	text-decoration: underline;
+	color: white;
+	font-size: 0.9rem;
 }
 
 /* CORPO */
 
 #main-text {
-    background-color: rgb(181, 221, 221);
-    padding: 20px 20px 150px 20px;
-    border-radius: 75px;
-    width: 60vw;
-    font-family: "Chivo", sans-serif;
+	background-color: rgb(181, 221, 221);
+	padding: 20px 20px 150px 20px;
+	border-radius: 75px;
+	width: 60vw;
+	font-family: "Chivo", sans-serif;
 }
 
 #main-text p {
-    font-size: 1rem;
-    font-weight: 600;
-    padding-right: 100px;
+	font-size: 1rem;
+	font-weight: 600;
+	padding-right: 100px;
 }
 
 #main-text h2 {
-    margin-top: 50px;
-    color: rgb(34, 138, 138);
+	margin-top: 50px;
+	color: rgb(34, 138, 138);
 }
 
 /* Calculadora */
 
 #calculadora-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.938);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.938);
 }
 
 #calculadora-container input {
-    margin-bottom: 25px;
-    width: 200px;
+	margin-bottom: 25px;
+	width: 200px;
 }
-h3 {
-color: aliceblue;
-background-color: rgb(34, 138, 138);
 
-
-
-
+#display h3 {
+	color: aliceblue;
+	background-color: rgb(34, 138, 138);
 }
