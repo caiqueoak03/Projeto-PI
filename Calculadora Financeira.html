@@ -11,6 +11,7 @@
 		></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
 		<!-- Banner -->
 		<div id="banner-container">
@@ -39,26 +40,26 @@
 			Valor do aluguel por m²
 			<input type="number" id="valorMetro2" />
 			Fluxo diário mensal
-			<input type="number" id="valorMetro2" />
-			Valor do aluguel por m²
-			<input type="number" id="valorMetro2" />
+			<input type="number" id="FluxoM" />
+			Area da loja
+			<input type="number" id="arealoja" />
 
 			<button id="button" onclick="calcular()">Calcular</button>
 
-			<div id="display"></div>
+			<div class="#main_text p" id="display"></div>
 		</div>
 	</body>
 </html>
 <script>
 	function calcular() {
-		var semInflação = Number(algm.value) * area.value;
-		var cali = Number(movi.value) * 0.002;
+		var semInflação = Number(valorMetro2.value) * arealoja.value;
+		var cali = Number(FluxoM.value) * 0.002;
 		var semInflação = Number(cali) * semInflação;
 
 		if (semInflação < semInflação) {
-			Display.innerHTML = `A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$`;
+			display.innerHTML = `<h3>O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.</h3>`;
 		} else {
-			Display.innerHTML = `O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.`;
+			display.innerHTML = `<h3>A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$</h3>`;
 		}
 	}
 </script>
