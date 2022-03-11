@@ -1,39 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Simulador Financeiro</title>
-		<script
-			src="https://kit.fontawesome.com/5c454b399b.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="style.css" />
-	</head>
 
-	<body>
-		<!-- Banner -->
-		<div id="banner-container">
-			<div id="logo-container">
-				<i id="icone" class="fa-solid fa-align-justify"></i>
-				<a href="site.html" id="logo-link">
-					<img id="logo" src="imagens/Logo PI.png" alt="" />
-					<p id="logo-text">Light On</p>
-				</a>
-			</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+    <script src="https://kit.fontawesome.com/5c454b399b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-			<div id="titles-container">
-				<a>contratar nossos serviços</a>
-				<a>falar conosco</a>
-				<a href="Calculadora Financeira.html">calcule o aluguel</a>
-			</div>
+<body>
 
-			<div id="cadastro-container">
-				<a href="">Login</a>
-				<a href="">Cadastre-se</a>
-			</div>
-		</div>
+    <!-- Banner -->
+    <div id="banner-container">
 
 		<!-- Calculadora -->
 		<div id="calculadora-container">
@@ -43,8 +23,40 @@
 			<input type="number" id="areaLoja" />
 			Fluxo diário de pessoas
 			<input type="number" id="fluxoDiário" />
+        <div id="logo-container">
+            <i id="icone" class="fa-solid fa-align-justify"></i>
+            <a href="site.html" id="logo-link">
+                <img id="logo" src="imagens/Logo PI.png" alt="">
+                <p id="logo-text">Light On</p>
+            </a>
+        </div>
 
-			<button id="button" onclick="calcular()">Calcular</button>
+        <div id="titles-container">
+            <a>contratar nossos serviços</a>
+            <a>falar conosco</a>
+            <a href="Calculadora Financeira.html" target="_blank">calcule o aluguel</a>
+        </div>
+
+        <div id="cadastro-container">
+            <a href="">Login</a>
+            <a href="">Cadastre-se</a>
+        </div>
+    </div>
+
+    <!-- Calculadora -->
+    <div id="calculadora-container">
+        Valor do aluguel por m²
+        <input type="number" id="valorMetro2">
+        Fluxo diário mensal
+        <input type="number" id="FluxoM">
+        Area da loja
+        <input type="number" id="arealoja">
+
+        <button id="button" onclick="calcular()">Calcular</button>
+
+        <div class="#main_text p" id="display"></div>
+    </div>
+</body>
 
 			<div class="#main_text p" id="display"></div>
 		</div>
@@ -59,3 +71,4 @@
 		display.innerHTML = `<h3>O valor do seu aluguel sem a taxa de fluxo é de R$${valorArea.toFixed(2)}, com a taxa do fluxo de pessoas inclusa, seu aluguel ficará R$${valorAreaTaxado.toFixed(2)}.</h3>`;
 	}
 </script>
+
