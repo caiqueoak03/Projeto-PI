@@ -37,29 +37,25 @@
 
 		<!-- Calculadora -->
 		<div id="calculadora-container">
-			Valor do aluguel por m²
-			<input type="number" id="valorMetro2" />
-			Fluxo diário mensal
-			<input type="number" id="FluxoM" />
-			Area da loja
-			<input type="number" id="arealoja" />
+			Valor do aluguel por m² (R$ / m²)
+			<input type="number" id="valorMetroQuad" />
+			Area da loja (m²)
+			<input type="number" id="areaLoja" />
+			Fluxo diário de pessoas
+			<input type="number" id="fluxoDiário" />
 
 			<button id="button" onclick="calcular()">Calcular</button>
 
 			<div class="#main_text p" id="display"></div>
 		</div>
-	</body>
 </html>
 <script>
 	function calcular() {
-		var semInflação = Number(valorMetro2.value) * arealoja.value;
-		var cali = Number(FluxoM.value) * 0.002;
-		var semInflação = Number(cali) * semInflação;
+		/* Calcula o valor da área do shopping levando em conta o fluxo diário de pessoas no mês */
+		var valorArea = Number(valorMetroQuad.value) * Number(areaLoja.value);
+		var taxaDeFluxo = Number(fluxoDiário.value) * Math.pow(10, -5);
+		var valorAreaTaxado = valorArea * (1 + taxaDeFluxo);
 
-		if (semInflação < semInflação) {
-			display.innerHTML = `<h3>O valor do seu alguel sem a inflação é de ${semInflação}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${semInflação}R$.</h3>`;
-		} else {
-			display.innerHTML = `<h3>A inflaçao não é o suficiente para mudar o valor o alguel sera de ${semInflação}R$</h3>`;
-		}
+		display.innerHTML = `<h3>O valor do seu aluguel sem a taxa de fluxo é de R$${valorArea.toFixed(2)}, com a taxa do fluxo de pessoas inclusa, seu aluguel ficará R$${valorAreaTaxado.toFixed(2)}.</h3>`;
 	}
 </script>

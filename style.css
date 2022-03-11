@@ -105,10 +105,10 @@ body {
 
 #calculadora-container input {
 	margin-bottom: 25px;
-	width: 200px;
+	width: 250px;
 }
 
 #display h3 {
-	color: aliceblue;
+	color: white;
 	background-color: rgb(34, 138, 138);
 }
