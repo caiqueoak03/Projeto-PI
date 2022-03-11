@@ -48,23 +48,22 @@
 
         <div class="#main_text p" id="display"></div>
     </div>
-
 </body>
 
 </html>
 <script>
     function calcular() {
-        var calculo_alugel = Number(valorMetro2.value) * (arealoja.value)
+        var calculo_aluguel = Number(valorMetro2.value) * (arealoja.value)
         var CalculoInflacao = Number(FluxoM.value) * (0.002)
-        var Cominflacao = Number(CalculoInflacao) * (calculo_alugel)
+        var Cominflacao = Number(CalculoInflacao) * (calculo_aluguel)
 
-        if (Cominflacao < calculo_alugel) {
+        if (Cominflacao < calculo_aluguel) {
             display.innerHTML =
            
-            `<h3>A inflaçao não é o suficiente para mudar o valor o alguel sera de ${calculo_alugel}R$</h3>`
+            `<h3>A inflaçao não é o suficiente para mudar o valor, o aluguel sera de R$ ${calculo_aluguel}</h3>`
         } else {
             display.innerHTML =
-            `<h3>O valor do seu alguel sem a inflação é de ${calculo_alugel}R$, com os ajustes de preço baseados nos dados recolhidos ficara ${calculo_alugel}R$.</h3>`;
+            `<h3>O valor do seu alguel sem a inflação é de ${calculo_aluguel}R$, com os ajustes de preço baseados nos dados recolhidos ficara R$${Cominflacao}.</h3>`;
            
 
         }
