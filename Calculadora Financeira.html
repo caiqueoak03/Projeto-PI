@@ -37,11 +37,11 @@
 
 		<!-- Calculadora -->
 		<div id="calculadora-container">
-			Valor do espaço de esposição por m²
+			<span>Valor do espaço de esposição por m²</span>
 			<input type="number" id="valorMetroQuad" />
-			Movimento de pessoas na area mensal
+			<span>Fluxo diário de pessoas no mês</span>
 			<input type="number" id="fluxoDiário" />
-			Tamanho da area desejada de exposição
+			<span>Tamanho da área desejada de exposição</span>
 			<input type="number" id="area" />
 
 			<button id="button" onclick="calcular()">Calcular</button>
@@ -53,11 +53,21 @@
 <script>
 	function calcular() {
 		/* Calcula o valor da área do shopping levando em conta o fluxo diário de pessoas no mês */
-		var valorArea = Number(valorMetroQuad.value) * (area.value);
+		var valorArea = Number(valorMetroQuad.value) * area.value;
 		var taxaDeFluxo = Number(fluxoDiário.value) * Math.pow(10, -5);
 		var valorAreaTaxado = valorArea * (1 + taxaDeFluxo);
 
-		display.innerHTML = `<h3>O valor da área de marketing no shopping é de  R$${Number(valorMetroQuad.value).toLocaleString('pt-br')} por m², com a area deseja de ${area.value}m² o aluguel sera de R$${valorArea.toLocaleString('PT-BR')}, mas a area solicitada tem um movimento mensal de ${fluxoDiário.value} pessoas o aluguel subira para R$${valorAreaTaxado.toLocaleString('PT-BR')} 
+		display.innerHTML = `<h3>O valor da área de marketing no shopping é de R$${Number(
+			valorMetroQuad.value,
+		).toLocaleString("pt-br")} por m², com a área desejada de ${
+			area.value
+		}m² o aluguel será de R$${valorArea.toLocaleString(
+			"PT-BR",
+		)}, mas a área solicitada tem um fluxo diário de ${
+			fluxoDiário.value
+		} pessoas e o aluguel subirá para R$${valorAreaTaxado.toLocaleString(
+			"PT-BR",
+		)} 
 		</h3>`;
 	}
 </script>

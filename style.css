@@ -105,10 +105,15 @@ body {
 
 #calculadora-container input {
 	margin-bottom: 25px;
-	width: 250px;
+	width: 275px;
+	border-radius: 5px;
 }
 
 #display h3 {
 	color: white;
 	background-color: rgb(34, 138, 138);
+	width: 80vw;
+	border-radius: 20px;
+	padding: 10px;
+	border: 1px solid black;
 }
