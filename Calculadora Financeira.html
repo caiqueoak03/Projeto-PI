@@ -10,23 +10,28 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Kaushan+Script&family=Niconne&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital,wght@1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 
 	<body>
 		<!-- Banner -->
 		<div id="banner-container">
 			<div id="logo-container">
-				<i id="icone" class="fa-solid fa-align-justify"></i>
-				<a href="site.html" id="logo-link">
+				<a href="index.html" id="logo-link">
 					<img id="logo" src="imagens/Logo PI.png" alt="" />
 					<p id="logo-text">Light On</p>
 				</a>
 			</div>
 
 			<div id="titles-container">
-				<a>contratar nossos serviços</a>
-				<a>falar conosco</a>
-				<a href="Calculadora Financeira.html">calcule o aluguel</a>
+				<a>conheça nossa visão de negócio</a>
+				<a>fale conosco</a>
+				<a href="Calculadora Financeira.html">calcule o aluguel de marketing</a>
 			</div>
 
 			<div id="cadastro-container">
@@ -37,17 +42,17 @@
 
 		<!-- Calculadora -->
 		<div id="calculadora-container">
-			<span>Valor do espaço de esposição por m²</span>
+			<div>Valor do espaço de esposição por m²</div>
 			<input type="number" id="valorMetroQuad" />
-			<span>Fluxo diário de pessoas no mês</span>
+			<div>Fluxo diário de pessoas no mês</div>
 			<input type="number" id="fluxoDiário" />
-			<span>Tamanho da área desejada de exposição</span>
+			<div>Tamanho da área desejada de exposição em m²</div>
 			<input type="number" id="area" />
 
 			<button id="button" onclick="calcular()">Calcular</button>
-
-			<div class="#main_text p" id="display"></div>
 		</div>
+
+		<div class="#main_text p" id="display"></div>
 	</body>
 </html>
 <script>

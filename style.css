@@ -3,20 +3,19 @@
 body {
 	margin: 0;
 	background: url(imagens/shopping\ pi\ edit.jpg) no-repeat;
-	min-height: 100vh;
 	background-size: cover;
+	min-height: 100vh;
 }
 
 #banner-container {
-	width: 100vw;
-	border-bottom: 10px solid rgb(9, 112, 160);
-	background-color: rgb(34, 138, 138);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	height: 75px;
-	font-size: 1rem;
 	color: white;
+	width: 100vw;
+	height: 75px;
+	border-bottom: 10px solid rgb(9, 112, 160);
+	background-color: rgb(34, 138, 138);
 	font-weight: 700;
 }
 
@@ -28,10 +27,10 @@ body {
 }
 
 #logo-link {
-	color: white;
-	text-decoration: none;
 	display: flex;
 	align-items: center;
+	color: white;
+	text-decoration: none;
 }
 
 #logo {
@@ -40,15 +39,16 @@ body {
 
 #logo-text {
 	margin-left: -30px;
-	font-size: 1.3rem;
-	font-family: cursive;
+	font-size: 1.7rem;
+	font-family: "Kaushan Script", cursive;
 }
 
 #titles-container {
-	column-gap: 75px;
 	display: flex;
-	font-family: sans-serif;
+	column-gap: 50px;
 	margin-right: 25px;
+	font-family: "Fredoka", sans-serif;
+	font-size: 1.1rem;
 }
 
 #titles-container a {
@@ -60,6 +60,7 @@ body {
 	display: flex;
 	align-items: center;
 	column-gap: 25px;
+	font-family: "Fredoka", sans-serif;
 }
 
 #cadastro-container a {
@@ -68,25 +69,29 @@ body {
 	font-size: 0.9rem;
 }
 
-/* CORPO */
+/* Main Text */
 
-#main-text {
-	background-color: rgb(181, 221, 221);
-	padding: 20px 20px 150px 20px;
+#main-text-container {
+	margin: auto;
+	margin-top: 40px;
+	padding: 20px 0px 50px 30px;
 	border-radius: 75px;
 	width: 60vw;
-	font-family: "Chivo", sans-serif;
+	background-color: rgb(181, 221, 221, 0.9);
 }
 
-#main-text p {
-	font-size: 1rem;
+#main-text-container p {
+	font-size: 1.2rem;
 	font-weight: 600;
 	padding-right: 100px;
+	font-family: "Fredoka", sans-serif;
 }
 
-#main-text h2 {
-	margin-top: 50px;
+#main-text-container h2 {
+	font-size: 1.7rem;
 	color: rgb(34, 138, 138);
+	font-family: "Playfair Display", serif;
+	margin-top: 40px;
 }
 
 /* Calculadora */
@@ -96,17 +101,25 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin-top: 50px;
-	font-size: 1rem;
+	font-family: "Fredoka", sans-serif;
 	font-weight: 600;
-	text-align: left;
-	color: rgba(0, 0, 0, 0.938);
+	border-radius: 30px;
+	padding: 50px;
+	width: 30vw;
+	margin: auto;
+	margin-top: 50px;
+	background-color: rgb(181, 221, 221, 0.9);
 }
 
 #calculadora-container input {
 	margin-bottom: 25px;
-	width: 275px;
+	width: 350px;
 	border-radius: 5px;
+}
+
+#button {
+	font-family: "Fredoka", sans-serif;
+	font-weight: 900;
 }
 
 #display h3 {
@@ -115,5 +128,7 @@ body {
 	width: 80vw;
 	border-radius: 20px;
 	padding: 10px;
+	margin: auto;
+	margin-top: 50px;
 	border: 1px solid black;
 }
