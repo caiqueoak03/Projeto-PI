@@ -4,43 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Simulador Financeiro</title>
-		<link rel="icon" href="imagens/Logo browser.png">
-		<script
-			src="https://kit.fontawesome.com/5c454b399b.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Kaushan+Script&family=Niconne&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital,wght@1,700;1,800&display=swap"
-			rel="stylesheet"
-		/>
+		<title>Document</title>
+		<style>
+			input {
+				width: 300px;
+			}
+		</style>
 	</head>
-
 	<body>
-		<!-- Banner -->
-		<div id="banner-container">
-			<div id="logo-container">
-				<a href="index.html" id="logo-link">
-					<img id="logo" src="imagens/Logo PI.png" alt="" />
-					<p id="logo-text">Light On</p>
-				</a>
-			</div>
-
-			<div id="titles-container">
-				<a>conheça nossa visão de negócio</a>
-				<a>fale conosco</a>
-				<a href="Calculadora Financeira.html">calcule o aluguel de marketing</a>
-			</div>
-
-			<div id="cadastro-container">
-				<a href="">Login</a>
-				<a href="">Cadastre-se</a>
-			</div>
-		</div>
-
 		<!-- Calculadora -->
 		<div id="calculadora-container">
 			<div>Valor do espaço de esposição por m²</div>
@@ -48,7 +19,7 @@
 			<div>Fluxo diário de pessoas no mês</div>
 			<input type="number" id="fluxoDiário" />
 			<div>Tamanho da área desejada de exposição em m²</div>
-			<input type="number" id="area" />
+			<input type="number" id="area" /> <br />
 
 			<button id="button" onclick="calcular()">Calcular</button>
 		</div>
@@ -56,6 +27,7 @@
 		<div class="#main_text p" id="display"></div>
 	</body>
 </html>
+
 <script>
 	function calcular() {
 		/* Calcula o valor da área do shopping levando em conta o fluxo diário de pessoas no mês */
@@ -74,6 +46,6 @@
 		} pessoas e o aluguel subirá para R$${valorAreaTaxado.toLocaleString(
 			"PT-BR",
 		)} 
-		</h3>`;
+  </h3>`;
 	}
 </script>
