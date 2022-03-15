@@ -1,3 +1,10 @@
+/* Variáveis */
+* {
+	--cor-banner: rgb(34, 138, 138);
+	--cor-barra-banner: rgb(9, 112, 160);
+	--cor-fundo-site: rgb(181, 221, 221, 0.9);
+}
+
 /* BANNER */
 
 body {
@@ -14,8 +21,8 @@ body {
 	color: white;
 	width: 100vw;
 	height: 75px;
-	border-bottom: 10px solid rgb(9, 112, 160);
-	background-color: rgb(34, 138, 138);
+	border-bottom: 7px solid var(--cor-barra-banner);
+	background-color: var(--cor-banner);
 	font-weight: 700;
 }
 
@@ -56,14 +63,14 @@ body {
 	color: white;
 }
 
-#cadastro-container {
+#usuário-container {
 	display: flex;
 	align-items: center;
 	column-gap: 25px;
 	font-family: "Fredoka", sans-serif;
 }
 
-#cadastro-container a {
+#usuário-container a {
 	text-decoration: underline;
 	color: white;
 	font-size: 0.9rem;
@@ -72,12 +79,12 @@ body {
 /* Main Text */
 
 #main-text-container {
-	margin: auto;
-	margin-top: 40px;
+	margin: 0 auto;
+	margin-top: 35px;
 	padding: 20px 0px 50px 30px;
 	border-radius: 75px;
 	width: 60vw;
-	background-color: rgb(181, 221, 221, 0.9);
+	background-color: var(--cor-fundo-site);
 }
 
 #main-text-container p {
@@ -89,7 +96,7 @@ body {
 
 #main-text-container h2 {
 	font-size: 1.7rem;
-	color: rgb(34, 138, 138);
+	color: var(--cor-banner);
 	font-family: "Playfair Display", serif;
 	margin-top: 40px;
 }
@@ -104,11 +111,11 @@ body {
 	font-family: "Fredoka", sans-serif;
 	font-weight: 600;
 	border-radius: 30px;
-	padding: 50px;
+	padding: 20px 50px 25px 50px;
 	width: 30vw;
-	margin: auto;
+	margin: 0 auto;
 	margin-top: 50px;
-	background-color: rgb(181, 221, 221, 0.9);
+	background-color: var(--cor-fundo-site);
 }
 
 #calculadora-container input {
@@ -117,18 +124,94 @@ body {
 	border-radius: 5px;
 }
 
+#calculadora-container :nth-child(2) {
+	margin-top: 10px;
+}
+
 #button {
 	font-family: "Fredoka", sans-serif;
 	font-weight: 900;
 }
 
+#display {
+}
+
 #display h3 {
 	color: white;
-	background-color: rgb(34, 138, 138);
+	background-color: var(--cor-banner);
 	width: 80vw;
 	border-radius: 20px;
 	padding: 10px;
 	margin: auto;
 	margin-top: 50px;
 	border: 1px solid black;
+}
+
+#calculadora-title {
+	border-bottom: 1px solid black;
+}
+
+/* LOGIN */
+
+#login-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 20vw;
+	height: 30vh;
+	background-color: var(--cor-fundo-site);
+	border-radius: 20px;
+	padding: 20px 30px;
+	margin: 0 auto;
+	margin-top: 100px;
+	box-shadow: 0px 0px 10px -2px black;
+	font-family: "Fredoka", sans-serif;
+}
+
+#login-container p {
+	margin: 0;
+	font-weight: 600;
+}
+
+#login-container input {
+	margin-bottom: 20px;
+}
+
+#login-container button {
+	width: 75px;
+	margin: 0 auto;
+	font-weight: 600;
+	font-family: "Fredoka", sans-serif;
+}
+
+/* CADASTRO */
+
+#cadastro-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 30px 20px 30px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px -2px black;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 30vw;
+	height: 60vh;
+	background-color: var(--cor-fundo-site);
+	font-family: "Fredoka", sans-serif;
+}
+
+#cadastro-container p {
+	margin: 0%;
+}
+
+#cadastro-container input {
+	margin-bottom: 20px;
+}
+
+#cadastro-container button {
+	width: 75px;
+	margin: 0 auto;
+	font-weight: 600;
+	font-family: "Fredoka", sans-serif;
 }
